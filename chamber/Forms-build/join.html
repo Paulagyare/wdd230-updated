@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Process of becoming a member">
+    <meta name="author" content="Paul Agyare">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>HTML5 Start Site by Paul Agyare</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="join-css/join.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="join-css/tablet.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="join-css/desktop.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header>
+        <h1>Prosperity Alliance  Chamber Join Page</h1>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <ul>
+            <li><a href="/chamber/index.html">🏡 Home</a></li>
+            <li class="active"><a href="/chamber/Forms-build/join.html">Join Us</a></li>
+            <li><a href="#">📘 About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2> Applicant Information </h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Enter Credentials</legend>
+                <label class="top"> First Name*<input type="text" name="fname" required> </label>
+                <label class="top"> Last Name*<input type="text" name="lname" required> </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Information</legend>
+                <label class="top">Business Position Title
+                    <input type="text" id="business-position" name="business-position"
+                        pattern="[A-Za-z\s-]{7,}"></label>
+
+                <label class="top">Email*
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required></label>
+
+                <label class="top">Cell Phone Number*
+                    <input type="tel" id="cell-phone" name="cell-phone" placeholder="+233 123456789" required></label>
+
+                <label class="top">Business Name/Title*
+                    <input type="text" id="business-name" name="business-name" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select Your Membership Level</legend>
+                <div>Membership Level</div>
+                <label class="sbs"> <input type="radio" id="np-membership" name="membership-level" value="np">
+                  Np Membership     (no fee)</label>
+
+                <label class="sbs"><input type="radio" id="bronze-membership" name="membership-level" value="bronze">
+                    Bronze        ($50) free training</label>
+
+                <label class="sbs"><input type="radio" id="silver-membership" name="membership-level" value="silver">
+                    Silver         ($100) Discount and free training</label>
+
+                    <label class="sbs"><input type="radio" id="gold-membership" name="membership-level" value="gold">
+                Gold         ($200) Discount, free training and exclusive access to premium content</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Describe Your Business</legend>
+                <div>Business description</div>
+                <label for="description"></label> <textarea id="business-description"
+                    name="business-description"></textarea></label>
+                    
+                <label for="form-load-date" style="display:none;">Form Load Date and Time</label>
+                <input type="hidden" id="form-load-date" name="form-load-date" value="">
+            </fieldset>
+            <input type="submit" value="Become a Member" class="submitBtn">
+        </form>
+    </main>
+    <!-- FOOTER HERE -->
+    <footer>
+        <p> Copyright © | Prosperity Alliance | Paul Agyare| Today's date is <span id="current-date"></span>.</p>
+    </footer>
+    <script src="joinUs-java/join.js"></script>
+
+</body>
+
+</html>

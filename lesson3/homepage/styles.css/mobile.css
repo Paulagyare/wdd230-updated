@@ -1,0 +1,199 @@
+/* Styles for the header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+header .image img {
+    width: 180px;
+}
+
+header .dropdown {
+    position: relative;
+
+}
+
+header .dropdown .down {
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+header .dropdown .dropdown-content {
+    position: absolute;
+    top: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 8px 0;
+    border: 1px solid #ddd;
+    z-index: 1;
+    display: none;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #030101;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+header .up {
+    margin: 0;
+    margin-left: 450px;
+}
+
+header .a {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+header .a li:not(:last-child) {
+    margin-right: 1rem;
+}
+
+header .a a {
+    color: #bbb3b3;
+    border-radius: 10px;
+}
+
+/* Styles for the navigation bar */
+nav {
+    background-color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a.active {
+    background-color: #9b9b9b;
+    color: #f32323;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    color: rgb(255, 66, 3);
+    font-size: 27px;
+    text-align: justify;
+}
+ol a:hover {
+    color: rgba(252, 22, 22, 0.898);
+    font-size: 20px;
+}
+
+
+/* Styles for the main content */
+main {
+    align-items: center;
+    justify-content: center;
+   
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+main h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+main section {
+    margin: 2rem 0;
+}
+
+main section h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+main section p {
+    margin: 1rem 0;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+#gallery img {
+    width: 500px;
+    height: 300px;
+}
+
+/* Styles for the footer */
+#foota {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 1385px;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+#foota a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .dropdown {
+        margin-top: 1rem;
+    }
+
+    header .a {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .a li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    #gallery {
+        flex-wrap: wrap;
+    }
+
+    #gallery img {
+        width: 48%;
+        margin-bottom: 1rem;
+    }
+}

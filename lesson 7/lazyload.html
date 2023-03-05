@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lazy image Loading</title>
+</head>
+
+
+<body>
+    <main>
+        <h1>Progressive Loading Images</h1>
+        <picture>
+            <img src="http://via.placeholder.com/300x400" data-src="https://placebeard.it/300x400" alt="a random guy"
+                loading="lazy" />
+        </picture>
+        <picture>
+            <img src="http://via.placeholder.com/300x400" data-src="https://baconmockup.com/300/400" alt="chicken"
+                loading="lazy" />
+        </picture>
+        <picture>
+            <img src="https://www.placecage.com/300/400" data-src="http://placeimg.com/300/400/any" alt="a random image"
+                loading="lazy" />
+        </picture>
+        <picture>
+            <img src="http://via.placeholder.com/300x400" data-src="https://placebear.com/300/400" alt="a bear"
+                loading="lazy" />
+        </picture>
+        <picture>
+            <img src="http://via.placeholder.com/300x400" data-src="https://picsum.photos/300/400"
+                alt="photo" loading="lazy" />
+        </picture>
+        <picture>
+            <img src="http://via.placeholder.com/300x400" data-src="https://loremflickr.com/300/400" alt="a kitten"
+                loading="lazy" />
+        </picture>
+        <picture>
+            <img src="http://via.placeholder.com/300x400" data-src="https://placekitten.com/300/400"
+                alt="a cat" loading="lazy" />
+        </picture>
+    </main>
+    <script src="java.js"></script>
+</body>
+
+</html>

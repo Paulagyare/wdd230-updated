@@ -1,0 +1,137 @@
+body {
+    background-color: #ffffff;
+    font-size: larger;
+
+}
+
+header {
+    border-radius: 4px;
+    margin: 0 120px 0 120px;
+    max-width: 1200px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    align-items: baseline;
+
+}
+
+footer {
+    border-radius: 4px;
+    margin: 0 120px 0 120px;
+    max-width: 1200px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding: 13px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav ul {
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    color: #ffffff;
+    list-style: none;
+}
+
+nav a,
+nav a:visited {
+    border-radius: 40px;
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: normal;
+    padding: .7rem;
+    float: center;
+}
+
+nav a:hover,
+.navtxt:hover {
+    background-color: rgb(161, 53, 53);
+    padding: .5rem;
+    font-size: 25px;
+}
+
+#active {
+    background-color: rgb(214, 22, 22)6;
+}
+
+main {
+    background-color: #ffffff;
+    border: 8px solid #070101;
+    border-style: solid none solid none;
+    padding: 3rem 3rem;
+    margin: 0 120px 0 120px;
+    max-width: 1200px;
+}
+
+section {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-size: x-large;
+    max-width: 580px;
+    justify-content: center;
+    margin-left: 280px;
+    margin-right: 280px;
+    padding: 1rem;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #120605;
+    border-image: initial;
+
+}
+
+main {
+    padding: 20px;
+}
+
+.color-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.color-row td {
+    padding: 10px;
+    text-align: center;
+}
+
+.color-samples div {
+    width: 50px;
+    height: 50px;
+}
+
+.color-samples.a1 div {
+    background-color: #DDEEE0;
+}
+
+.color-samples.dark div {
+    border: 1px solid #fff;
+}
+
+.color-samples.dark div:hover {
+    border-color: #ddd;
+}
+
+.color-hex {
+    font-family: monospace;
+}
+
+.color-hex.txt.dark {
+    color: #fff;
+}
+
+
+
+#image {
+    display: block;
+    margin: auto;
+    width: 20%;
+    margin-left: 18%;
+    align-items: center;
+    justify-content: center;
+}

@@ -30,14 +30,14 @@
 <body>
     <!-- HEADER HERE -->
     <header>
-        <h1>Prosperity Alliance  Chamber Join Page</h1>
+        <h1>Prosperity Alliance Chamber Join Page</h1>
     </header>
 
 
     <!-- NAVIGATION HERE -->
     <nav class="clearfix">
         <ul>
-            <li><a href="./chamber/index.html">🏡 Home</a></li>
+            <li><a href="/chamber/index.html">🏡 Home</a></li>
             <li class="active"><a href="/chamber/Forms-build/join.html">Join Us</a></li>
             <li><a href="#">📘 About Us</a></li>
         </ul>
@@ -72,26 +72,28 @@
                 <legend>Select Your Membership Level</legend>
                 <div>Membership Level</div>
                 <label class="sbs"> <input type="radio" id="np-membership" name="membership-level" value="np">
-                  Np Membership     (no fee)</label>
+                    Np Membership (no fee)</label>
 
                 <label class="sbs"><input type="radio" id="bronze-membership" name="membership-level" value="bronze">
-                    Bronze        ($50) free training</label>
+                    Bronze ($50) free training</label>
 
                 <label class="sbs"><input type="radio" id="silver-membership" name="membership-level" value="silver">
-                    Silver         ($100) Discount and free training</label>
+                    Silver ($100) Discount and free training</label>
 
-                    <label class="sbs"><input type="radio" id="gold-membership" name="membership-level" value="gold">
-                Gold         ($200) Discount, free training and exclusive access to premium content</label>
+                <label class="sbs"><input type="radio" id="gold-membership" name="membership-level" value="gold">
+                    Gold ($200) Discount, free training and exclusive access to premium content</label>
             </fieldset>
 
             <fieldset>
                 <legend>Describe Your Business</legend>
                 <div>Business description</div>
-                <label for="description"></label> <textarea id="business-description"
-                    name="business-description"></textarea></label>
-                    
-                <label for="form-load-date" style="display:none;">Form Load Date and Time</label>
-                <input type="hidden" id="form-load-date" name="form-load-date" value="">
+                <label for="business-description">Business Description:</label>
+                <textarea id="business-description" name="business-description"></textarea>
+
+
+                <label for="load-date-time">Form Load Date and Time:</label>
+                <input type="datetime-local" id="load-date-time" name="load-date-time">
+
             </fieldset>
             <input type="submit" value="Become a Member" class="submitBtn">
         </form>

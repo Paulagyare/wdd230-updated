@@ -258,7 +258,7 @@ body {
     background-color: rgba(155, 155, 147, 0.799);
 }
 
-#events-div {
+#events-div { text-align: justify;
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
     border: 5px solid #525457;

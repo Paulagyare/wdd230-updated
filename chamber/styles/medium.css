@@ -1,0 +1,18 @@
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+
+  .container {
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .main-picture {
+  grid-row: unset;
+  grid-column: unset;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+  
+  }
